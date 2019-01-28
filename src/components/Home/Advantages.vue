@@ -36,9 +36,9 @@
               alt="build"
             >
           </a>
-          <a href="https://insight.sensiolabs.com/projects/d8cbccde-24d4-4909-910f-b7baaaf26f30">
+          <a href="https://insight.symfony.com/projects/d8cbccde-24d4-4909-910f-b7baaaf26f30">
             <img
-              src="https://insight.sensiolabs.com/projects/d8cbccde-24d4-4909-910f-b7baaaf26f30/mini.png"
+              src="https://insight.symfony.com/projects/d8cbccde-24d4-4909-910f-b7baaaf26f30/mini.svg"
               alt="insight"
             >
           </a>
