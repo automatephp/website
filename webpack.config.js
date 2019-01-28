@@ -49,7 +49,8 @@ Encore
     'static/installer.php',
     'static/robots.txt',
     'static/sitemap.xml',
-    'static/googleae5075fd86941943.html'
+    'static/googleae5075fd86941943.html',
+    '_redirects'
   ]))
   .addPlugin(new Dotenv({path: '.env'}))
 ;
