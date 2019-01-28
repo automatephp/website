@@ -38,7 +38,7 @@
           </a>
           <a href="https://insight.sensiolabs.com/projects/d8cbccde-24d4-4909-910f-b7baaaf26f30">
             <img
-              src="//insight.sensiolabs.com/projects/d8cbccde-24d4-4909-910f-b7baaaf26f30/mini.png"
+              src="https://insight.sensiolabs.com/projects/d8cbccde-24d4-4909-910f-b7baaaf26f30/mini.png"
               alt="insight"
             >
           </a>
