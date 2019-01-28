@@ -1,31 +1,20 @@
 const Encore = require('@symfony/webpack-encore')
-const webpack = require('webpack')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 const CopyWebpackPlugin = require('copy-webpack-plugin')
-const UglifyJsPlugin = require('uglifyjs-webpack-plugin')
-const RobotstxtPlugin = require('robotstxt-webpack-plugin').default
 const Dotenv = require('dotenv-webpack')
-const SitemapWebpackPlugin = require('sitemap-webpack-plugin').default;
+const webpack = require('webpack')
 
-const routes = [
-  '/doc',
-  '/doc/deployment',
-  '/doc/plugins',
-  '/'
-];
 
 Encore
   .setOutputPath('dist/')
   .setPublicPath('/')
   .cleanupOutputBeforeBuild()
+  .enableSingleRuntimeChunk()
   .enableSourceMaps(!Encore.isProduction())
-  //.enableVersioning(Encore.isProduction()) // pas compatible github.io
+  .enableVersioning(Encore.isProduction())
   .enableVueLoader()
   .enableSassLoader()
   .addEntry('app', './src/main.js')
-  .configureBabel(function(babelConfig) {
-    babelConfig.presets.push('es2017','stage-2');
-  })
   .addLoader(
     {
       test: /\.md$/,
@@ -58,15 +47,4 @@ Encore
 const webpackConfig = Encore.getWebpackConfig();
 
 
-if (Encore.isProduction()) {
-  // Remove the old version first
-  webpackConfig.plugins = webpackConfig.plugins.filter(
-    plugin => !(plugin instanceof webpack.optimize.UglifyJsPlugin)
-  );
-
-  // Add the new one
-  webpackConfig.plugins.push(new UglifyJsPlugin());
-}
-
-// export the final configuration
 module.exports = webpackConfig;
