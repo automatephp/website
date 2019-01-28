@@ -11,7 +11,7 @@
 
 <script>
 
-  import '../../asciinema/asciinema-player.js';
+  import 'asciinema-player';
 
   export default {
     name: "demo",

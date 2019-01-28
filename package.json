@@ -10,6 +10,7 @@
     "build": "encore production"
   },
   "dependencies": {
+    "asciinema-player": "^2.6.1",
     "create-react-class": "^15.6.3",
     "dotenv-webpack": "^1.7.0",
     "font-awesome": "^4.7.0",
