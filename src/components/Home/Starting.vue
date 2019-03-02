@@ -4,7 +4,7 @@
       <h2>Get starting</h2>
       <p>You can download the latest version of Automate with the following command</p>
       <div class="command">
-        <span>curl -LSs </span>https://automatephp.github.io/installer.php | php
+        <span>curl -LSs </span>https://automate-deployer.com/installer.php | php
       </div>
       <router-link
         :to="{ name: 'docStarted' }"

@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
-        <loc>https://automatephp.github.io/doc</loc>
+        <loc>https://automate-deployer.com/doc/get-started</loc>
     </url>
     <url>
-        <loc>https://automatephp.github.io/doc/deployment</loc>
+        <loc>https://automate-deployer.com/doc/deployment</loc>
     </url>
     <url>
-        <loc>https://automatephp.github.io/doc/plugins</loc>
+        <loc>https://automate-deployer.com/doc/plugins</loc>
     </url>
     <url>
-        <loc>https://automatephp.github.io/</loc>
+        <loc>https://automate-deployer.com/</loc>
     </url>
 </urlset>
