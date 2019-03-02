@@ -7,7 +7,8 @@
   "scripts": {
     "dev": "encore dev",
     "watch": "encore dev --watch",
-    "build": "encore production"
+    "build": "encore production",
+    "server": "encore dev-server"
   },
   "dependencies": {
     "asciinema-player": "^2.6.1",

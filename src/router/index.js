@@ -4,7 +4,7 @@ import Doc from '../components/Doc/Doc'
 
 const docPages = [
   {
-    path: '/doc',
+    path: '/doc/get-started',
     name: 'docStarted',
     md: require('../../static/doc/get-started.md'),
     title: 'Get started',
