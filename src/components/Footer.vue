@@ -10,6 +10,10 @@
           class="eolas"
         >Eolas</a>
       </div>
+      <div class="netlify">
+        <span>Hosted by</span>
+        <a href="https://www.netlify.com/">Netlify</a>
+      </div>
       <div class="right">
         <router-link
           v-if="loc === 'home'"

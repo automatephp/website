@@ -553,7 +553,7 @@ footer {
       font-weight: 400;
       margin-right: 15px;
     }
-    a {
+    a.eolas {
       font-size: 0;
       display: inline-block;
       vertical-align: middle;
@@ -565,6 +565,16 @@ footer {
       &:hover {
         opacity: 0.75;
       }
+    }
+  }
+  .netlify {
+    float: left;
+    margin: 25px 40px;
+    color: #fff;
+    font-family: "Work Sans";
+    @include rem(18);
+    a {
+      color: #ffffff;
     }
   }
   .right {
