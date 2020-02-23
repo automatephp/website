@@ -37,7 +37,7 @@ platforms:
             dev-exemple-front-01:
                 host: dev.exemple.com
                 user: automate
-                password: %dev_password%
+                password: "%dev_password%"
                 path: /home/wwwroot/
                 port: 22
     production:
@@ -47,7 +47,7 @@ platforms:
             prod-exemple-front-01:
                 host: prod-1.exemple.com
                 user: automate
-                password: %prod_password%
+                password: "%prod_password%"
                 path: /home/wwwroot/
             prod-exemple-front-02:
                 host: prod-2.exemple.com
@@ -58,7 +58,7 @@ platforms:
                 host: prod-3.exemple.com
                 user: automate
                 ssh_key: /path/to/key
-                password: %passphrase%
+                password: "%passphrase%"
                 path: /home/wwwroot/
 shared_files:
     - app/config/parameters.yml
@@ -83,10 +83,10 @@ post_deploy:
 repository: git@github.com:symfony/symfony-demo.git
 ```
 
-Address of your git repository. If you use a repository in https you can use a variable with the notation %variable_name% for the password like this:
+Address of your git repository. If you use a repository in https you can use a variable with the notation "%variable_name%" for the password like this:
 
 ```YAML
-repository: https://user:%git_password%@exemple.com
+repository: "https://user:%git_password%@exemple.com"
 ```
 
 
@@ -103,22 +103,22 @@ platforms:
         max_releases: 1        # The number of releases to be kept on remote servers.
         servers:
             prod-exemple-front-01:
-                host: prod-1.exemple.com   # The domain name or the server's IP
-                user: automate             # The SSH user to be used for the deployment
-                password: %prod_password%  # Read more below in "The SSH password" section
-                path: /home/wwwroot/       # The path on the remote server
-                port: 22                   # The SSH port (default:22)    
+                host: prod-1.exemple.com     # The domain name or the server's IP
+                user: automate               # The SSH user to be used for the deployment
+                password: "%prod_password%"  # Read more below in "The SSH password" section
+                path: /home/wwwroot/         # The path on the remote server
+                port: 22                     # The SSH port (default:22)    
             prod-exemple-front-02:
                 host: prod-2.exemple.com
                 user: automate
-                ssh_key: /keys/private     # A file path to private key
-                password: %passphrase%     # An optional passphrase
+                ssh_key: /keys/private       # A file path to private key
+                password: "%passphrase%"     # An optional passphrase
                 path: /home/wwwroot/
 ```
 
 It's possible to authenticate on the server with a password or with a private key. For the latter, you must define a path to the private key file and an optional passphrase (password) as the example above describes.
 
-You can use a variable with the notation %variable_name% 
+You can use a variable with the notation "%variable_name%" 
 If one variable is detected Automate will search for the value in an environment variable « AUTOMATE__variable_name ».
 If the environment variable doesn't exist, Automate will ask to you to provide your password upon each deployment through in your terminal.
 
