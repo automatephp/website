@@ -16,6 +16,7 @@ Vue.config.productionTip = false;
 Vue.use(VueRouter);
 Vue.use(VueScrollTo);
 Vue.use(Meta);
+Vue.use(VueMarkdown);
 
 // Analytics
 Vue.use(VueAnalytics, {
@@ -27,6 +28,6 @@ Vue.use(VueAnalytics, {
 new Vue({
   el: '#app',
   router,
-  components: { App, VueMarkdown },
+  components: { App },
   template: '<App/>',
 })

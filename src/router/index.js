@@ -2,25 +2,29 @@ import Router from 'vue-router'
 import Home from '../components/Home/Main'
 import Doc from '../components/Doc/Doc'
 
+import GetStartedDoc from '../../static/doc/get-started.md'
+import DeploymentDoc from '../../static/doc/deployment.md'
+import PluginsDoc from '../../static/doc/plugins.md'
+
 const docPages = [
   {
     path: '/doc/get-started',
     name: 'docStarted',
-    md: require('../../static/doc/get-started.md'),
+    md: GetStartedDoc,
     title: 'Get started',
     description: 'Documentation to configure Automate.',
   },
   {
     path: '/doc/deployment',
     name: 'docDeploy',
-    md: require('../../static/doc/deployment.md'),
+    md: DeploymentDoc,
     title: 'Launching a deployment',
     description: 'All the elements to launch a deployment with Automate.',
   },
   {
     path: '/doc/plugins',
     name: 'docPlugins',
-    md: require('../../static/doc/plugins.md'),
+    md: PluginsDoc,
     title: 'Plugins',
     description: 'A list of plugins to use with Automate.',
   },

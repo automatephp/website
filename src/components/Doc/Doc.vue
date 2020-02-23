@@ -26,7 +26,7 @@
 
             <div class="right">
               <div class="inner">
-                <vue-markdown class="doc-md">{{ md }}</vue-markdown>
+                <vue-markdown class="doc-md" :source="md" />
               </div>
             </div>
           </div>
