@@ -70,8 +70,8 @@ on_deploy:
     - "composer install"
     - "setfacl -R -m u:www-data:rwX -m u:`whoami`:rwX var"
 post_deploy:
-    - "php bin/console doctrine:schema:update --force"
-    only: eddv-exemple-front-01                     
+    - cmd: "php bin/console doctrine:schema:update --force"
+      only: eddv-exemple-front-01
     - "php bin/console doctrine:cache:clear-result"
 ```
 
@@ -161,8 +161,8 @@ The list of commands to be launched on remote servers **after deployment**.
 
 ```YAML
 post_deploy:
-    - "php bin/console doctrine:cache:clear-result"
-       only: eddv-exemple-front-01                     
+    - cmd: "php bin/console doctrine:cache:clear-result"
+      only: eddv-exemple-front-01                     
 ```
 
 # Server Configuration
