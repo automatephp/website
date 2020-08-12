@@ -157,12 +157,15 @@ The list of commands to be launched on remote servers **before deployment**.
 
 The list of commands to be launched on remote servers **after deployment**.
 
-**Option**: Possibility to execute only one command just to one remote server with:
+**Option**: Restrict the servers that must execute the command:
 
 ```YAML
 post_deploy:
     - cmd: "php bin/console doctrine:cache:clear-result"
       only: eddv-exemple-front-01                     
+    - cmd: "php bin/console messenger:consume"
+      only: ["eddv-exemple-front-01", "dddv-exemple-front-01"]
+
 ```
 
 # Server Configuration
