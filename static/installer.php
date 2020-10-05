@@ -34,7 +34,7 @@ namespace
     // check version
     check(
         'You have a supported version of PHP (>= 7.2.5).',
-        'You need PHP 5.6 or greater.',
+        'You need PHP 7.2.5 or greater.',
         function () {
             return version_compare(PHP_VERSION, '7.2.5', '>=');
         }
