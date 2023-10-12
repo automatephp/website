@@ -179,7 +179,7 @@ Automate will create the following directory structure to the remote server:
 |  |  |--config
 |  |  |  |--parameters.yml --> /your/project/path/shared/app/config/parameters.yml
 |
-|--shared_files
+|--shared
 |  |  |--config
 |  |  |  |--parameters.yml #the real file is here
 |
